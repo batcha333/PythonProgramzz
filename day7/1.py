@@ -10,4 +10,4 @@ print(arm)
 if(i==arm):
     print(i,"is armstrong num")
 else:
-    print(i,"is not armstrong number")
+    print(i,"is not an armstrong number")
