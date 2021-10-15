@@ -9,5 +9,5 @@ while(a):
 print(arm)
 if(i==arm):
     print(i,"is armstrong num")
-else:1
+else:
     print(i,"is not an armstrong number")
