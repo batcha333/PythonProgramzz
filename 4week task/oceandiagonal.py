@@ -1,9 +1,11 @@
 n="ocean"
-l=[3,1,0,1,3]
-for i in range(5):
-    for j in range(5):
-        if(i==j or i+j==4):
-            print(n[i],' '*l[i],end="")
+a=5
+for i in range(a):
+    for j in range(a):
+        if(i==j or i+j==a-1):
+            print(n[i],end=" ")
+        else:
+            print(' ',end=" ")
     print()
 
             
