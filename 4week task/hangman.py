@@ -53,8 +53,9 @@ bucket={
   "movies":["matrix","twilight","battleship","fast"],
   "sport":["cricket","handball","rugby","kabaddi"]
 }
-INPUT=input("enter your choice:").lower()
-word=random.choice(bucket[INPUT])
+bucket['mix']=bucket["movies"]+bucket['sport']
+bucket_inp=input("enter your choice:").lower()
+word=random.choice(bucket[bucket_inp])
 count=0
 l=["-" for i in word]
 reserved=[]
@@ -67,7 +68,7 @@ def ans():
 while end_game:
   inp=input("enter: ")
   while inp in reserved:
-    inp=input("Invalid,give another input: ")
+    inp=input("allready given,give another input: ")
   reserved.append(inp)
   if inp in word:
     ans()
