@@ -7,11 +7,16 @@ for i in range(n):
     b=float(input("e:"))
     l2.append(b)
     dict[l1[i]]=l2[i]
-l2.sort()
 d=list(set(l2))
+f=list(sorted(d))
 new={}
-c=d[1]
+print(f)
+c=f[1]
+print(c)
 for j,k in dict.items():
     if(c==k):
         new.update({j:k})
-print(new)
+lis=list(new.keys())
+lis.sort()
+for i in lis:
+    print(i)

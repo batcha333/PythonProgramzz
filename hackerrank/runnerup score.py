@@ -1,11 +1,7 @@
-if __name__ == '__main__':
-    n = int(raw_input())
-    arr = map(int, raw_input().split())
-    print(sorted(list(set(arr)))[-2])  
-
-
-
-
+x=input().split(" ")
+a=list(map(int,x))
+a=list(set(x))
+print(a[-2])
 '''n = int(input(""))
 l=[]
 for i in range(n):
