@@ -1,5 +1,4 @@
-a=int(input(" a:"))
-
+a=int(input("a:"))
 def sqr():
     b=a*a
     print(b)

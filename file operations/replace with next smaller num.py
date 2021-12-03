@@ -1,3 +1,5 @@
+import time
+start=time.time()
 l=[10,9,5,4,5,3,2,1]
 l1=[]
 for i in range(len(l)):
@@ -7,4 +9,6 @@ for i in range(len(l)):
             break
     else:
         l1.append(-1)
+end=time.time()
+print("Time=",end-start)
 print(l1)
